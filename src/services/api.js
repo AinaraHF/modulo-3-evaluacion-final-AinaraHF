@@ -1,5 +1,6 @@
-function getDataApi(){
-    return fetch('https://hp-api.onrender.com/api/characters/house/gryffindor')
+function getDataApi(filterHouse){
+    
+    return fetch(`https://hp-api.onrender.com/api/characters/house/${filterHouse}`)
     .then((resp)=> resp.json())
     .then((data)=> {
 

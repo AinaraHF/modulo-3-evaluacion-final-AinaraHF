@@ -1,0 +1,18 @@
+.character{
+    list-style: none;
+    border: solid black 1px;
+    width: 200px;
+
+    &_image{
+        height: 300px;
+        width: 200px;
+    }
+
+    &_name{
+        text-align: center;
+    }
+
+    &_species{
+        text-align: center;
+    }
+}
