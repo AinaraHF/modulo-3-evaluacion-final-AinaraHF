@@ -5,10 +5,10 @@ function Character({ info, i }) {
 
   return (
     <li className="character">
-        <Link to={`/character/${info[i].id}`}>
+        <Link to={`/character/${info[i].id}`} className={info[i].house.toLowerCase()}>
           <img src={info[i].image !== "" ? info[i].image : "https://placehold.co/200x300/png"} alt={info[i].name} className="character_image"/>
-          <h4 className="character_name">{info[i].name}</h4>
-          <p className="character_species">{info[i].species}</p>
+          <h4 className="name">{info[i].name}</h4>
+          <p className="species">{info[i].species}</p>
         </Link>
     </li>
   )

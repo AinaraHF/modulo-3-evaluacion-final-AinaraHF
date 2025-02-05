@@ -8,7 +8,7 @@ function CharacterDetail({ data }) {
             <img src={data.image} alt={data.name} className="details_image" />
             <div className={data.house.toLowerCase()}>
                 <h4>{data.name}</h4>
-                <p>Specie: {data.species}</p>
+                <p>Species: {data.species}</p>
                 <p>House: {data.house}</p>
                 <p>Status: {data.alive ? "alive" : "dead 💀"}</p>
                 <p>Patronus: {data.patronus}</p>

@@ -3,19 +3,36 @@
     border: solid black 1px;
     width: 200px;
     
-
     &_image{
         height: 300px;
         width: 200px;
     }
+}
 
-    &_name{
-        text-align: center;
-        text-decoration: none;
-    }
+.gryffindor{
+    background-color: darkred;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
 
-    &_species{
-        text-align: center;
-        text-decoration: none;
-    }
+.slytherin{
+    background-color: darkslategray;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.hufflepuff{
+    background-color: darkgoldenrod;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.ravenclaw{
+    background-color: darkblue;
+    text-align: center;
+    text-decoration: none;
+    color: black;
 }
