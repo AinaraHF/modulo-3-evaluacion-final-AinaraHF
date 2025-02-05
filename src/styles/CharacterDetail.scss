@@ -1,0 +1,29 @@
+.details{
+    display: flex;
+    gap: 20px;
+    border: solid black 1px;
+    width: 400px;
+    
+
+    &_image{
+        height: 300px;
+        width: 200px;
+    }
+}
+
+.gryffindor{
+    background-color: darkred;
+}
+
+.slytherin{
+    background-color: darkslategray;
+
+}
+
+.hufflepuff{
+    background-color: darkgoldenrod;
+}
+
+ravenclaw{
+    background-color: darkblue;
+}

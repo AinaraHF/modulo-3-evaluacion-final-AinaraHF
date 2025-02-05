@@ -15,6 +15,7 @@ function getDataApi(filterHouse){
                 alive: character.alive, 
                 patronus: character.patronus, 
                 ancestry: character.ancestry,
+                nickname: character.alternate_names,
             };
         });
         return newArray;

@@ -2,6 +2,7 @@
     list-style: none;
     border: solid black 1px;
     width: 200px;
+    
 
     &_image{
         height: 300px;
@@ -10,9 +11,11 @@
 
     &_name{
         text-align: center;
+        text-decoration: none;
     }
 
     &_species{
         text-align: center;
+        text-decoration: none;
     }
 }
