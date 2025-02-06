@@ -7,9 +7,11 @@ function CharacterList({ data }) {
     const htmlList = data.map((character, index) => <Character key={character.id} info={data} i={index}/>)
     
   return (
-    <ul className="characterlist">
-        {htmlList}
-    </ul>
+    <div>
+      
+        {data.length !== 0 ? <ul className="characterlist">{htmlList}</ul> : <p>Este personaje no existe</p> }
+    
+    </div>
   )
 }
 

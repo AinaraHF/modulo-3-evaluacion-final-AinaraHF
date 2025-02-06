@@ -1,20 +1,30 @@
 import PropTypes from "prop-types";
 import "../styles/CharacterDetail.scss"
-
+import UnicornPic from "../images/unicornio.jpg"
 
 function CharacterDetail({ data }) {
 
+  const translateSpecies = () => {
+    if(data.species === "human"){
+     return "humano"
+  }else if(data.species === "werewolf"){
+    return "hombre lobo"
+  }else if(data.species === "ghost"){
+    return "fantasma"
+  }else if(data.species === "half-giant"){
+    return "semigigante"
+  }
+}
     return (
-    <article className="details">
-            <img src={data.image} alt={data.name} className="details_image" />
-            <div className={data.house.toLowerCase()}>
-                <h4>{data.name}</h4>
-                <p>Species: {data.species}</p>
-                <p>House: {data.house}</p>
-                <p>Status: {data.alive ? "alive" : "dead 💀"}</p>
-                <p>Patronus: {data.patronus}</p>
-                <p>Ancestry: {data.ancestry}</p>
-                <p>Nickname: {data.nickname.length !== 0 ? `${data.nickname[0]}` : "no nickname"}</p>
+    <article className={`details ${data.house.toLowerCase()} `}>
+            <img src={data.image !== "" ? data.image : UnicornPic} alt={data.name} className="details_image" />
+            <div className="details_text">
+                <h4 className="details_text-h4">{data.name}</h4>
+                <p>Especie: {translateSpecies()}</p>
+                <p>Casa: {data.house}</p>
+                <p>Género: {data.gender === "female" ? "femenino" : "masculino"}</p>
+                <p>Estado: {data.alive ? "vivo" : "muerto 💀"}</p>
+                <p>Apodo: {data.nickname.length !== 0 ? `${data.nickname[0]}` : "no tiene apodo"}</p>
             </div>
         
     </article>

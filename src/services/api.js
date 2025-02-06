@@ -13,12 +13,11 @@ function getDataApi(filterHouse){
                 species: character.species, 
                 house: character.house, 
                 alive: character.alive, 
-                patronus: character.patronus, 
-                ancestry: character.ancestry,
+                gender: character.gender, 
                 nickname: character.alternate_names,
             };
         });
-        return newArray.sort((a, b)=> a.name - b.name)
+        return newArray
     })
 }
 

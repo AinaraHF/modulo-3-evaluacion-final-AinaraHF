@@ -8,7 +8,7 @@ function FilterByName({ setFilterName, filterName }) {
 
   return (
     <div>
-        <label htmlFor="name">Busca por nombre de personaje </label>
+        <label htmlFor="name">Busca por nombre de personaje: </label>
         <input type="text" id="name" onChange={handleInput} value={filterName}/>
     </div>
   )

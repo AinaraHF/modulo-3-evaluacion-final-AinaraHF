@@ -8,6 +8,14 @@
         height: 300px;
         width: 200px;
     }
+
+    &_text{
+        padding: 20px;
+        line-height: 1.5;
+        &-h4{
+            line-height: 2; 
+        }
+    }
 }
 
 .gryffindor{

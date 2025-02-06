@@ -13,6 +13,7 @@ function App() {
   const [characters, setCharacters] = useState([])
   const [filterName, setFilterName] = useState("")
   const [filterHouse, setFilterHouse] = useState("Gryffindor")
+  const [filterGender, setFilterGender] = useState("")
 
   useEffect(()=>{
     getDataApi(filterHouse).then((data)=>{ setCharacters(data)})
@@ -20,6 +21,8 @@ function App() {
 
   const filterCharacters = characters.filter(character => character.name.toLowerCase().includes(filterName))
   .filter(character=> character.house === filterHouse)
+  .filter(character=> filterGender ? character.gender === filterGender : true)
+  .sort((a, b)=> a.name.localeCompare(b.name))
 
   const { pathname } = useLocation()
   const characterRoute = matchPath("/character/:idCharacter", pathname)
@@ -33,8 +36,8 @@ function App() {
       <Route path="/" element={
         <>
       <h1>Harry Potter</h1>
-      <Filters setFilterName={setFilterName} setFilterHouse={setFilterHouse} filterName={filterName} filterHouse={filterHouse}/>
-      <ResetButton setFilterName={setFilterName} setFilterHouse={setFilterHouse}/>
+      <Filters setFilterName={setFilterName} setFilterHouse={setFilterHouse} setFilterGender={setFilterGender} filterName={filterName} filterHouse={filterHouse} filterGender={filterGender} />
+      <ResetButton setFilterName={setFilterName} setFilterHouse={setFilterHouse} setFilterGender={setFilterGender}/>
       <CharacterList data={filterCharacters}/>
         </>
     }/>

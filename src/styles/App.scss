@@ -1,8 +1,25 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+
+
+h1{
+  font-size: 50px;
+  color: rgb(159,117,27);
+  
+    @media (width > 768px) {
+      font-size: 100px;
+  }
 }
 
 

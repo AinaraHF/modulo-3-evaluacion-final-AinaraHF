@@ -16,7 +16,9 @@ Los pasos seguidos para realizar este ejercicio fueron los siguientes:
 
 3. En base a la información proporcionada en el input, el select o ambos, realizar un filtro de personajes tanto por nombre como por la casa a la que pertenecen. Y que en dicha búsqueda aparezca tanto la imagen como el nombre y la especie del personaje.
 
-4. Escuchar eventos sobre todos los personajes, de tal forma que al clicar en uno naveguemos a otra página donde se nos muestren más detalles del mismo, como por ejemplo su patronus o su ascendencia, además de los datos indicados en el punto anterior. 
+4. Escuchar eventos sobre todos los personajes, de tal forma que al clicar en uno naveguemos a otra página donde se nos muestren más detalles del mismo, como por ejemplo su estado o género, además de los datos indicados en el punto anterior. 
+
+5. Como parte de los bonus, he ordenado alfabéticamente el listado de personajes y he creado un botón de reset que al clicarlo, lo devuelve al listado original en el que se muestran los personajes que corresponden a Gryffindor.
 
 ## Guía de inicio rápido
 
