@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 function FilterByHouse({ setFilterHouse, filterHouse }) {
 
@@ -17,5 +18,10 @@ function FilterByHouse({ setFilterHouse, filterHouse }) {
     </div>
   )
 }
+
+FilterByHouse.propTypes = {
+  setFilterHouse: PropTypes.func,
+  filterHouse: PropTypes.string,
+};
 
 export default FilterByHouse

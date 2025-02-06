@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "../styles/Character.scss"
 import { Link } from "react-router-dom"
 
@@ -13,5 +14,10 @@ function Character({ info, i }) {
     </li>
   )
 }
+
+Character.propTypes = {
+  info: PropTypes.array,
+  i: PropTypes.number,
+};
 
 export default Character

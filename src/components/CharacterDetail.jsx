@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "../styles/CharacterDetail.scss"
 
 
@@ -19,5 +20,9 @@ function CharacterDetail({ data }) {
     </article>
   )
 }
+
+CharacterDetail.propTypes = {
+  data: PropTypes.object,
+};
 
 export default CharacterDetail

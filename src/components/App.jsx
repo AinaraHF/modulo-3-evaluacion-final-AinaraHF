@@ -4,6 +4,9 @@ import CharacterList from "./CharacterList"
 import Filters from "./filters/Filters"
 import { matchPath, Route, Routes, useLocation } from "react-router-dom"
 import CharacterDetail from "./CharacterDetail"
+import "..//styles/App.scss"
+import ResetButton from "./ResetButton"
+import PageNotFound from "./PageNotFound"
 
 function App() {
   
@@ -27,12 +30,16 @@ function App() {
   return (
     <>
     <Routes>
-      <Route path="/" element={<>
+      <Route path="/" element={
+        <>
       <h1>Harry Potter</h1>
       <Filters setFilterName={setFilterName} setFilterHouse={setFilterHouse} filterName={filterName} filterHouse={filterHouse}/>
+      <ResetButton setFilterName={setFilterName} setFilterHouse={setFilterHouse}/>
       <CharacterList data={filterCharacters}/>
-      </>}/>
+        </>
+    }/>
       <Route path="/character/:idCharacter" element={<CharacterDetail data={characterDetail}/>}/>
+      <Route path="*" element={<PageNotFound/>}/>
     </Routes>
       
     </>

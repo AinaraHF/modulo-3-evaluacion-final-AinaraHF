@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 function FilterByName({ setFilterName, filterName }) {
 
@@ -12,5 +13,10 @@ function FilterByName({ setFilterName, filterName }) {
     </div>
   )
 }
+
+FilterByName.propTypes = {
+  setFilterName: PropTypes.func,
+  filterName: PropTypes.string,
+};
 
 export default FilterByName

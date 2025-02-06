@@ -18,7 +18,7 @@ function getDataApi(filterHouse){
                 nickname: character.alternate_names,
             };
         });
-        return newArray;
+        return newArray.sort((a, b)=> a.name - b.name)
     })
 }
 
