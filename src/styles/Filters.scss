@@ -3,3 +3,25 @@
     flex-direction: column;
     gap: 10px;
 }
+
+.labelName {
+    @media (width > 768px) {
+        font-size: 22px;
+    }
+}
+
+.labelHouse {
+    @media (width > 768px) {
+        font-size: 22px;
+    }
+}
+.optionHouse {
+    @media (width > 768px) {
+        font-size: 18px;
+    }
+}
+.labelGender {
+    @media (width > 768px) {
+        font-size: 22px;
+    }
+}

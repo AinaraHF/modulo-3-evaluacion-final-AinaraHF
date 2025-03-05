@@ -8,11 +8,11 @@ function FilterByGender({ setFilterGender }) {
 
   return (
     <div>
-        <label htmlFor="">Selecciona el género: </label>
+        <label htmlFor="" className="labelGender">Selecciona el género: </label>
         <input type="radio" name="gender" id="female" onChange={handleRadio} value="female"/>
-        <label htmlFor="female">Femenino </label>
+        <label htmlFor="female" className="labelGender">Femenino </label>
         <input type="radio" name="gender" id="male" onChange={handleRadio} value="male"/>
-        <label htmlFor="male">Masculino </label>
+        <label htmlFor="male" className="labelGender">Masculino </label>
     </div>
   )
 }

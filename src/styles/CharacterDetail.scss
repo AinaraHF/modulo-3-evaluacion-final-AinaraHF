@@ -3,13 +3,14 @@
     gap: 20px;
     border: solid black 1px;
     width: 400px;
-    
+    align-items: center;
     &_image{
         height: 300px;
         width: 200px;
     }
 
     &_text{
+        
         padding: 20px;
         line-height: 1.5;
         &-h4{

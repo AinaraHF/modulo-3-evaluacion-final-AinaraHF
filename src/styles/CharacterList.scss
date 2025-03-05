@@ -1,6 +1,10 @@
-.characterlist{
+.characterlist {
     display: flex;
     gap: 20px;
     flex-wrap:wrap ;
     justify-content: center;    
+}
+
+.errorMessage {
+    font-size: 40px;
 }

@@ -9,7 +9,7 @@ function CharacterList({ data }) {
   return (
     <div>
       
-        {data.length !== 0 ? <ul className="characterlist">{htmlList}</ul> : <p>Este personaje no existe</p> }
+        {data.length !== 0 ? <ul className="characterlist">{htmlList}</ul> : <p className="errorMessage">Este personaje no existe... ¿seguro que eres un verdadero Potterhead?🤔</p> }
     
     </div>
   )

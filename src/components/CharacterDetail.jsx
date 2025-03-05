@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import "../styles/CharacterDetail.scss"
-import UnicornPic from "../images/unicornio.jpg"
+import HogwartsCrest from "../images/HogwartsCrest.webp"
 
 function CharacterDetail({ data }) {
 
@@ -17,7 +17,7 @@ function CharacterDetail({ data }) {
 }
     return (
     <article className={`details ${data.house.toLowerCase()} `}>
-            <img src={data.image !== "" ? data.image : UnicornPic} alt={data.name} className="details_image" />
+            <img src={data.image !== "" ? data.image : HogwartsCrest} alt={data.name} className="details_image" />
             <div className="details_text">
                 <h4 className="details_text-h4">{data.name}</h4>
                 <p>Especie: {translateSpecies()}</p>

@@ -9,12 +9,12 @@ function FilterByHouse({ setFilterHouse, filterHouse }) {
 
   return (
     <div>
-        <label htmlFor="house">Elige la casa: </label>
-        <select name="house" id="house" onChange={handleSelect} value={filterHouse}>
-            <option value="Gryffindor">Gryffindor 🦁</option>
-            <option value="Slytherin">Slytherin 🐍</option>
-            <option value="Hufflepuff">Hufflepuff 🦡</option>
-            <option value="Ravenclaw">Ravenclaw 🦅</option>
+        <label htmlFor="house" className="labelHouse">Elige la casa: </label>
+        <select name="house" id="house" onChange={handleSelect} value={filterHouse} className="optionHouse">
+            <option value="Gryffindor" className="optionHouse">Gryffindor 🦁</option>
+            <option value="Slytherin" className="optionHouse">Slytherin 🐍</option>
+            <option value="Hufflepuff" className="optionHouse">Hufflepuff 🦡</option>
+            <option value="Ravenclaw" className="optionHouse">Ravenclaw 🦅</option>
         </select>
     </div>
   )
