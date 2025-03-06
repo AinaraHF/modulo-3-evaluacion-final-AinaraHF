@@ -1,24 +1,64 @@
+.detailPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.backbutton {
+    background-color: rgb(159,117,27);
+    border-radius: 5px;
+    color: palegoldenrod;
+    margin: 20px;
+    padding: 5px;
+    max-width: 50px;
+    cursor: pointer;
+        &:hover{
+            background-color: palegoldenrod;
+            color: rgb(159,117,27);
+    }
+    @media (width > 768px) {
+        font-size: 18px;
+        max-width: 75px;
+
+    }
+}
+
 .details{
     display: flex;
     gap: 20px;
     border: solid black 1px;
     width: 400px;
     align-items: center;
+        @media (max-width: 410px){
+            max-width: 300px;
+        }
     &_image{
         height: 300px;
         width: 200px;
+        @media (max-width: 410px){
+            max-width: 150px;
+            max-height: 250px;
+        }
     }
 
     &_text{
-        
         padding: 20px;
         line-height: 1.5;
+            @media (max-width: 410px){
+                padding: 5px;
+                font-size: 12px;
+        }
         &-h4{
             line-height: 2; 
+            @media (max-width: 410px){
+                font-size: 14px;
+            }
         }
     }
 }
 
+.heart-icon {
+    color: white;
+}
 .gryffindor{
     background-color: darkred;
 }

@@ -9,6 +9,6 @@ export default defineConfig({
       usePolling: true,
     },
     open: true,
-  }
-
+  },
+  base: "/modulo-3-evaluacion-final-AinaraHF/",
 })

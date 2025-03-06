@@ -4,6 +4,13 @@
     gap: 10px;
 }
 
+.inputName {
+    border: goldenrod;
+    @media (width > 768px) {
+        font-size: 22px;
+    }
+}
+
 .labelName {
     @media (width > 768px) {
         font-size: 22px;
@@ -16,8 +23,9 @@
     }
 }
 .optionHouse {
+    border: goldenrod;
     @media (width > 768px) {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 .labelGender {

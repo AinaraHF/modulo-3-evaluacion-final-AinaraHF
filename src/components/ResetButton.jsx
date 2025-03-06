@@ -3,9 +3,9 @@ import "../styles/ResetButton.scss"
 function ResetButton({ setFilterName, setFilterHouse, setFilterGender }) {
 
     const handleReset = () =>{
-        setFilterName("")
-        setFilterHouse("Gryffindor")
-        setFilterGender("")
+        setFilterName("");
+        setFilterHouse("Gryffindor");
+        setFilterGender("");
     }
 
   return (

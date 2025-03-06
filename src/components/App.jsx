@@ -7,6 +7,8 @@ import CharacterDetail from "./CharacterDetail"
 import "..//styles/App.scss"
 import ResetButton from "./ResetButton"
 import PageNotFound from "./PageNotFound"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBoltLightning } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   
@@ -35,7 +37,7 @@ function App() {
     <Routes>
       <Route path="/" element={
         <>
-      <h1>Harry Potter</h1>
+      <h1>Harry Potter <FontAwesomeIcon icon={faBoltLightning} /></h1>
       <Filters setFilterName={setFilterName} setFilterHouse={setFilterHouse} setFilterGender={setFilterGender} filterName={filterName} filterHouse={filterHouse} filterGender={filterGender} />
       <ResetButton setFilterName={setFilterName} setFilterHouse={setFilterHouse} setFilterGender={setFilterGender}/>
       <CharacterList data={filterCharacters}/>
